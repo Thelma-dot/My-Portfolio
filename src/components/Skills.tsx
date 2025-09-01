@@ -44,10 +44,8 @@ const Skills: React.FC = () => {
             skills: [
                 { name: 'MongoDB', level: 88, icon: <SiMongodb /> },
                 { name: 'PostgreSQL', level: 85, icon: <SiPostgresql /> },
-                { name: 'Redis', level: 80, icon: <FaDatabase /> },
                 { name: 'AWS', level: 82, icon: <FaCloud /> },
-                { name: 'Docker', level: 85, icon: <SiDocker /> },
-                { name: 'Kubernetes', level: 75, icon: <SiKubernetes /> }
+                { name: 'Docker', level: 85, icon: <SiDocker /> }
             ]
         },
         {
