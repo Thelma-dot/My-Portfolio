@@ -263,16 +263,16 @@
   .contact-content {
     gap: 3rem;
   }
-  
+
   .contact-info,
   .contact-form {
     padding: 2rem;
   }
-  
+
   .contact-cta {
     padding: 2.5rem;
   }
-  
+
   .contact-cta h3 {
     font-size: 1.75rem;
   }
@@ -282,62 +282,62 @@
   .contact {
     padding: 3rem 0;
   }
-  
+
   .contact-content {
     grid-template-columns: 1fr;
     gap: 2rem;
     margin-bottom: 3rem;
   }
-  
+
   .contact-info,
   .contact-form {
     padding: 1.5rem;
   }
-  
+
   .contact-info h3 {
     font-size: 1.5rem;
   }
-  
+
   .contact-item {
     padding: 0.75rem;
   }
-  
+
   .contact-icon {
     width: 40px;
     height: 40px;
     font-size: 1rem;
   }
-  
+
   .social-icons {
     justify-content: center;
   }
-  
+
   .social-link {
     padding: 0.75rem;
     min-width: 70px;
   }
-  
+
   .social-link svg {
     font-size: 1.25rem;
   }
-  
+
   .contact-cta {
     padding: 2rem;
   }
-  
+
   .contact-cta h3 {
     font-size: 1.5rem;
   }
-  
+
   .contact-cta p {
     font-size: 1rem;
   }
-  
+
   .cta-buttons {
     flex-direction: column;
     align-items: center;
   }
-  
+
   .cta-buttons .btn {
     width: 100%;
     max-width: 300px;
@@ -348,40 +348,40 @@
   .contact {
     padding: 2rem 0;
   }
-  
+
   .contact-content {
     margin-bottom: 2rem;
     gap: 2rem;
   }
-  
+
   .contact-info,
   .contact-form {
     padding: 1.25rem;
   }
-  
+
   .contact-info h3 {
     font-size: 1.25rem;
     margin-bottom: 1rem;
   }
-  
+
   .contact-item {
     flex-direction: column;
     text-align: center;
     gap: 0.75rem;
     padding: 1rem;
   }
-  
+
   .contact-text h4 {
     font-size: 0.9rem;
     margin-bottom: 0.5rem;
   }
-  
+
   .social-icons {
     flex-wrap: wrap;
     gap: 1rem;
     justify-content: center;
   }
-  
+
   .social-link {
     min-width: 60px;
     min-height: 44px;
@@ -390,39 +390,40 @@
     align-items: center;
     justify-content: center;
   }
-  
+
   .social-link svg {
     font-size: 1rem;
   }
-  
+
   .social-link span {
     font-size: 0.75rem;
   }
-  
+
   .form-group input,
   .form-group textarea {
     padding: 0.875rem;
-    font-size: 16px; /* Prevents zoom on iOS */
+    font-size: 16px;
+    /* Prevents zoom on iOS */
     min-height: 44px;
   }
-  
+
   .submit-btn {
     padding: 0.875rem 1.5rem;
     font-size: 1rem;
     min-height: 48px;
     width: 100%;
   }
-  
+
   .contact-cta {
     padding: 1.5rem;
     text-align: center;
   }
-  
+
   .contact-cta h3 {
     font-size: 1.25rem;
     margin-bottom: 1rem;
   }
-  
+
   .contact-cta p {
     font-size: 0.9rem;
     margin-bottom: 1.5rem;
@@ -437,25 +438,26 @@
 
 /* Extra small devices */
 @media (max-width: 360px) {
+
   .contact-info,
   .contact-form {
     padding: 1rem;
   }
-  
+
   .contact-item {
     padding: 0.75rem;
   }
-  
+
   .social-link {
     min-width: 50px;
     padding: 0.5rem;
   }
-  
+
   .form-group input,
   .form-group textarea {
     padding: 0.75rem;
   }
-  
+
   .submit-btn {
     padding: 0.75rem 1.25rem;
     font-size: 0.9rem;

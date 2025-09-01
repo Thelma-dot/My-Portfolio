@@ -214,8 +214,11 @@ a:hover {
 /* Mobile-First Responsive Design */
 /* Touch-friendly interactions */
 @media (max-width: 768px) {
+
   /* Prevent text selection on mobile for better UX */
-  .btn, .nav-link, .social-link {
+  .btn,
+  .nav-link,
+  .social-link {
     -webkit-tap-highlight-color: transparent;
     -webkit-touch-callout: none;
     -webkit-user-select: none;
@@ -223,7 +226,11 @@ a:hover {
   }
 
   /* Better touch targets */
-  button, a, input, textarea, select {
+  button,
+  a,
+  input,
+  textarea,
+  select {
     min-height: 44px;
     min-width: 44px;
   }

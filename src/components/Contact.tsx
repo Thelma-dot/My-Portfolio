@@ -3,6 +3,7 @@ import { motion } from 'framer-motion';
 import { useInView } from 'react-intersection-observer';
 import { FaEnvelope, FaPhone, FaMapMarkerAlt, FaGithub, FaLinkedin, FaTwitter } from 'react-icons/fa';
 import emailjs from '@emailjs/browser';
+import { EMAILJS_CONFIG } from '../config/emailjs';
 import './Contact.css';
 
 const Contact: React.FC = () => {
@@ -23,7 +24,7 @@ const Contact: React.FC = () => {
 
     // Initialize EmailJS
     useEffect(() => {
-        emailjs.init('your_public_key'); // Replace with your actual public key
+        emailjs.init(EMAILJS_CONFIG.PUBLIC_KEY);
     }, []);
 
     const handleInputChange = (e: React.ChangeEvent<HTMLInputElement | HTMLTextAreaElement>) => {
@@ -41,10 +42,10 @@ const Contact: React.FC = () => {
         try {
             // Send email using EmailJS
             const result = await emailjs.sendForm(
-                'service_your_service_id', // Replace with your EmailJS service ID
-                'template_your_template_id', // Replace with your EmailJS template ID
+                EMAILJS_CONFIG.SERVICE_ID,
+                EMAILJS_CONFIG.TEMPLATE_ID,
                 e.currentTarget as HTMLFormElement,
-                'your_public_key' // Replace with your EmailJS public key
+                EMAILJS_CONFIG.PUBLIC_KEY
             );
 
             if (result.status === 200) {

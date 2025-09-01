@@ -208,8 +208,15 @@
 }
 
 @keyframes heartbeat {
-  0%, 100% { transform: scale(1); }
-  50% { transform: scale(1.2); }
+
+  0%,
+  100% {
+    transform: scale(1);
+  }
+
+  50% {
+    transform: scale(1.2);
+  }
 }
 
 .footer-cta .btn-sm {
@@ -222,7 +229,7 @@
   .footer-content {
     gap: 3rem;
   }
-  
+
   .footer-links {
     gap: 1.5rem;
   }
@@ -232,40 +239,40 @@
   .footer {
     padding: 0;
   }
-  
+
   .footer-content {
     grid-template-columns: 1fr;
     gap: 2rem;
     padding: 3rem 0 2rem;
   }
-  
+
   .footer-links {
     grid-template-columns: repeat(2, 1fr);
     gap: 2rem;
   }
-  
+
   .brand-logo .logo-full {
     font-size: 1.25rem;
   }
-  
+
   .brand-description {
     font-size: 0.95rem;
   }
-  
+
   .footer-section h4 {
     font-size: 1rem;
   }
-  
+
   .footer-section .section-links .footer-link {
     font-size: 0.9rem;
   }
-  
+
   .bottom-content {
     flex-direction: column;
     text-align: center;
     gap: 1.5rem;
   }
-  
+
   .copyright p {
     font-size: 0.85rem;
     justify-content: center;
@@ -277,41 +284,41 @@
     padding: 2rem 0 1.5rem;
     gap: 2rem;
   }
-  
+
   .footer-links {
     grid-template-columns: 1fr;
     gap: 1.5rem;
   }
-  
+
   .brand-logo {
     flex-direction: column;
     text-align: center;
     gap: 0.75rem;
     margin-bottom: 1rem;
   }
-  
+
   .brand-logo .logo-text {
     width: 40px;
     height: 40px;
     font-size: 1.25rem;
   }
-  
+
   .brand-logo .logo-full {
     font-size: 1.1rem;
   }
-  
+
   .brand-description {
     font-size: 0.9rem;
     text-align: center;
     line-height: 1.6;
     margin-bottom: 1rem;
   }
-  
+
   .brand-social {
     justify-content: center;
     gap: 1rem;
   }
-  
+
   .brand-social .social-link {
     width: 40px;
     height: 40px;
@@ -319,28 +326,28 @@
     min-width: 44px;
     min-height: 44px;
   }
-  
+
   .footer-section {
     text-align: center;
     padding: 0 1rem;
   }
-  
+
   .footer-section h4 {
     font-size: 0.95rem;
     text-align: center;
     margin-bottom: 1rem;
   }
-  
+
   .footer-section h4::after {
     left: 50%;
     transform: translateX(-50%);
   }
-  
+
   .footer-section .section-links {
     text-align: center;
     gap: 0.5rem;
   }
-  
+
   .footer-section .section-links .footer-link {
     padding: 0.5rem 0;
     min-height: 44px;
@@ -348,27 +355,27 @@
     align-items: center;
     justify-content: center;
   }
-  
+
   .footer-section .section-links .footer-link:hover {
     transform: translateY(-2px);
   }
-  
+
   .footer-cta {
     text-align: center;
     padding: 1.5rem;
   }
-  
+
   .footer-cta h3 {
     font-size: 1.25rem;
     margin-bottom: 1rem;
   }
-  
+
   .footer-cta p {
     font-size: 0.9rem;
     margin-bottom: 1.5rem;
     line-height: 1.6;
   }
-  
+
   .footer-cta .btn {
     width: 100%;
     max-width: 250px;
@@ -376,12 +383,12 @@
     font-size: 1rem;
     padding: 0.875rem 1.5rem;
   }
-  
+
   .footer-shapes .shape-1 {
     width: 150px;
     height: 150px;
   }
-  
+
   .footer-shapes .shape-2 {
     width: 100px;
     height: 100px;
@@ -394,43 +401,43 @@
     padding: 1.5rem 0 1rem;
     gap: 1.5rem;
   }
-  
+
   .footer-links {
     gap: 1.25rem;
   }
-  
+
   .brand-logo .logo-text {
     width: 35px;
     height: 35px;
     font-size: 1.1rem;
   }
-  
+
   .brand-logo .logo-full {
     font-size: 1rem;
   }
-  
+
   .brand-description {
     font-size: 0.85rem;
   }
-  
+
   .brand-social .social-link {
     width: 35px;
     height: 35px;
     font-size: 1rem;
   }
-  
+
   .footer-section h4 {
     font-size: 0.9rem;
   }
-  
+
   .footer-cta {
     padding: 1.25rem;
   }
-  
+
   .footer-cta h3 {
     font-size: 1.1rem;
   }
-  
+
   .footer-cta .btn {
     max-width: 220px;
     padding: 0.75rem 1.25rem;
