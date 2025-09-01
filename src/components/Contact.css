@@ -351,6 +351,7 @@
   
   .contact-content {
     margin-bottom: 2rem;
+    gap: 2rem;
   }
   
   .contact-info,
@@ -360,25 +361,34 @@
   
   .contact-info h3 {
     font-size: 1.25rem;
+    margin-bottom: 1rem;
   }
   
   .contact-item {
     flex-direction: column;
     text-align: center;
     gap: 0.75rem;
+    padding: 1rem;
   }
   
   .contact-text h4 {
     font-size: 0.9rem;
+    margin-bottom: 0.5rem;
   }
   
   .social-icons {
     flex-wrap: wrap;
+    gap: 1rem;
+    justify-content: center;
   }
   
   .social-link {
     min-width: 60px;
-    padding: 0.5rem;
+    min-height: 44px;
+    padding: 0.75rem;
+    display: flex;
+    align-items: center;
+    justify-content: center;
   }
   
   .social-link svg {
@@ -391,24 +401,63 @@
   
   .form-group input,
   .form-group textarea {
-    padding: 0.75rem;
-    font-size: 0.9rem;
+    padding: 0.875rem;
+    font-size: 16px; /* Prevents zoom on iOS */
+    min-height: 44px;
   }
   
   .submit-btn {
-    padding: 0.75rem 1.5rem;
-    font-size: 0.9rem;
+    padding: 0.875rem 1.5rem;
+    font-size: 1rem;
+    min-height: 48px;
+    width: 100%;
   }
   
   .contact-cta {
     padding: 1.5rem;
+    text-align: center;
   }
   
   .contact-cta h3 {
     font-size: 1.25rem;
+    margin-bottom: 1rem;
   }
   
   .contact-cta p {
+    font-size: 0.9rem;
+    margin-bottom: 1.5rem;
+  }
+
+  .cta-buttons .btn {
+    width: 100%;
+    max-width: 280px;
+    min-height: 48px;
+  }
+}
+
+/* Extra small devices */
+@media (max-width: 360px) {
+  .contact-info,
+  .contact-form {
+    padding: 1rem;
+  }
+  
+  .contact-item {
+    padding: 0.75rem;
+  }
+  
+  .social-link {
+    min-width: 50px;
+    padding: 0.5rem;
+  }
+  
+  .form-group input,
+  .form-group textarea {
+    padding: 0.75rem;
+  }
+  
+  .submit-btn {
+    padding: 0.75rem 1.25rem;
     font-size: 0.9rem;
   }
 }

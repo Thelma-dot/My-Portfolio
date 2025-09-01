@@ -365,56 +365,138 @@
 
     .timeline-content {
         padding: 1rem;
+        border-radius: var(--radius-md);
     }
 
     .timeline-title {
         font-size: 1.1rem;
+        margin-bottom: 0.5rem;
+        line-height: 1.3;
     }
 
     .timeline-company {
         font-size: 0.9rem;
+        margin-bottom: 0.5rem;
+    }
+
+    .timeline-period {
+        font-size: 0.8rem;
+        margin-bottom: 0.75rem;
     }
 
     .timeline-description {
         font-size: 0.9rem;
+        line-height: 1.5;
+        margin-bottom: 1rem;
+    }
+
+    .timeline-achievements {
+        margin-bottom: 1rem;
     }
 
     .timeline-achievements h4 {
         font-size: 0.95rem;
+        margin-bottom: 0.5rem;
     }
 
     .timeline-achievements li {
         font-size: 0.85rem;
+        line-height: 1.4;
+        margin-bottom: 0.25rem;
+    }
+
+    .tech-badges {
+        gap: 0.5rem;
+        flex-wrap: wrap;
     }
 
     .tech-badge {
         font-size: 0.75rem;
-        padding: 0.2rem 0.6rem;
+        padding: 0.25rem 0.6rem;
+        border-radius: var(--radius-sm);
     }
 
     .experience-summary {
         padding: 1.5rem;
+        margin-top: 2rem;
     }
 
     .summary-content h3 {
         font-size: 1.25rem;
+        margin-bottom: 1rem;
+        text-align: center;
+    }
+
+    .summary-grid {
+        gap: 1rem;
     }
 
     .summary-item {
         padding: 1rem;
+        text-align: center;
+        border-radius: var(--radius-md);
     }
 
     .summary-icon {
         width: 45px;
         height: 45px;
         font-size: 1.1rem;
+        margin: 0 auto 0.75rem;
     }
 
     .summary-item h4 {
         font-size: 1.1rem;
+        margin-bottom: 0.5rem;
     }
 
     .summary-item p {
         font-size: 0.9rem;
+        line-height: 1.5;
+    }
+}
+
+/* Extra small devices */
+@media (max-width: 360px) {
+    .experience {
+        padding: 1.5rem 0;
+    }
+
+    .timeline-content {
+        padding: 0.875rem;
+    }
+
+    .timeline-title {
+        font-size: 1rem;
+    }
+
+    .timeline-company {
+        font-size: 0.85rem;
+    }
+
+    .timeline-description {
+        font-size: 0.85rem;
+    }
+
+    .timeline-achievements li {
+        font-size: 0.8rem;
+    }
+
+    .tech-badge {
+        font-size: 0.7rem;
+        padding: 0.2rem 0.5rem;
+    }
+
+    .experience-summary {
+        padding: 1.25rem;
+    }
+
+    .summary-item {
+        padding: 0.875rem;
+    }
+
+    .summary-icon {
+        width: 40px;
+        height: 40px;
+        font-size: 1rem;
     }
 }

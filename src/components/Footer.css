@@ -275,6 +275,7 @@
 @media (max-width: 480px) {
   .footer-content {
     padding: 2rem 0 1.5rem;
+    gap: 2rem;
   }
   
   .footer-links {
@@ -286,6 +287,7 @@
     flex-direction: column;
     text-align: center;
     gap: 0.75rem;
+    margin-bottom: 1rem;
   }
   
   .brand-logo .logo-text {
@@ -301,21 +303,32 @@
   .brand-description {
     font-size: 0.9rem;
     text-align: center;
+    line-height: 1.6;
+    margin-bottom: 1rem;
   }
   
   .brand-social {
     justify-content: center;
+    gap: 1rem;
   }
   
   .brand-social .social-link {
     width: 40px;
     height: 40px;
     font-size: 1.1rem;
+    min-width: 44px;
+    min-height: 44px;
+  }
+  
+  .footer-section {
+    text-align: center;
+    padding: 0 1rem;
   }
   
   .footer-section h4 {
     font-size: 0.95rem;
     text-align: center;
+    margin-bottom: 1rem;
   }
   
   .footer-section h4::after {
@@ -325,10 +338,43 @@
   
   .footer-section .section-links {
     text-align: center;
+    gap: 0.5rem;
+  }
+  
+  .footer-section .section-links .footer-link {
+    padding: 0.5rem 0;
+    min-height: 44px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
   }
   
   .footer-section .section-links .footer-link:hover {
     transform: translateY(-2px);
+  }
+  
+  .footer-cta {
+    text-align: center;
+    padding: 1.5rem;
+  }
+  
+  .footer-cta h3 {
+    font-size: 1.25rem;
+    margin-bottom: 1rem;
+  }
+  
+  .footer-cta p {
+    font-size: 0.9rem;
+    margin-bottom: 1.5rem;
+    line-height: 1.6;
+  }
+  
+  .footer-cta .btn {
+    width: 100%;
+    max-width: 250px;
+    min-height: 48px;
+    font-size: 1rem;
+    padding: 0.875rem 1.5rem;
   }
   
   .footer-shapes .shape-1 {
@@ -339,5 +385,55 @@
   .footer-shapes .shape-2 {
     width: 100px;
     height: 100px;
+  }
+}
+
+/* Extra small devices */
+@media (max-width: 360px) {
+  .footer-content {
+    padding: 1.5rem 0 1rem;
+    gap: 1.5rem;
+  }
+  
+  .footer-links {
+    gap: 1.25rem;
+  }
+  
+  .brand-logo .logo-text {
+    width: 35px;
+    height: 35px;
+    font-size: 1.1rem;
+  }
+  
+  .brand-logo .logo-full {
+    font-size: 1rem;
+  }
+  
+  .brand-description {
+    font-size: 0.85rem;
+  }
+  
+  .brand-social .social-link {
+    width: 35px;
+    height: 35px;
+    font-size: 1rem;
+  }
+  
+  .footer-section h4 {
+    font-size: 0.9rem;
+  }
+  
+  .footer-cta {
+    padding: 1.25rem;
+  }
+  
+  .footer-cta h3 {
+    font-size: 1.1rem;
+  }
+  
+  .footer-cta .btn {
+    max-width: 220px;
+    padding: 0.75rem 1.25rem;
+    font-size: 0.9rem;
   }
 }

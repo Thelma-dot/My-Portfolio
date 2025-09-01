@@ -205,7 +205,7 @@
     color: var(--primary-color);
 }
 
-/* Responsive adjustments */
+/* Enhanced Mobile Responsiveness */
 @media (max-width: 480px) {
     .header-content {
         padding: 0.75rem 0;
@@ -219,6 +219,68 @@
 
     .mobile-menu-btn {
         font-size: 1.25rem;
-        padding: 0.25rem;
+        padding: 0.5rem;
+        min-width: 44px;
+        min-height: 44px;
+    }
+
+    .nav-mobile-link {
+        padding: 1.25rem 1rem;
+        font-size: 1rem;
+        min-height: 44px;
+        display: flex;
+        align-items: center;
+    }
+
+    .mobile-social-links {
+        padding: 1rem 0;
+        gap: 2rem;
+    }
+
+    .mobile-social-links a {
+        font-size: 1.75rem;
+        min-width: 44px;
+        min-height: 44px;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+    }
+}
+
+@media (max-width: 576px) {
+    .nav-mobile-list {
+        padding: 0.5rem 0;
+    }
+
+    .nav-mobile-link {
+        padding: 1rem 1.5rem;
+    }
+}
+
+/* Dark mode mobile adjustments */
+[data-theme="dark"] .nav-mobile {
+    background: var(--bg-secondary);
+    border-top-color: var(--border-color);
+}
+
+[data-theme="dark"] .nav-mobile-link {
+    border-bottom-color: var(--border-color);
+    color: var(--text-primary);
+}
+
+[data-theme="dark"] .nav-mobile-link:hover {
+    background: var(--bg-dark);
+}
+
+/* Touch-friendly mobile improvements */
+@media (max-width: 768px) {
+    .nav-mobile-link:active {
+        background: var(--primary-color);
+        color: white;
+        transform: scale(0.98);
+    }
+
+    .mobile-social-links a:active {
+        transform: scale(0.9);
     }
 }
