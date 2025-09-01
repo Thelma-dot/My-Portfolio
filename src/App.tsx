@@ -47,9 +47,9 @@ const App: React.FC = () => {
 
     return (
         <ThemeProvider>
-                  <div className="App">
-        <Header />
-        <main>
+            <div className="App">
+                <Header />
+                <main>
                     <Hero />
                     <About />
                     <Skills />
