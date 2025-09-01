@@ -35,8 +35,7 @@ const Skills: React.FC = () => {
                 { name: 'Express.js', level: 90, icon: <FaNodeJs /> },
                 { name: 'Python', level: 85, icon: <SiPython /> },
                 { name: 'REST APIs', level: 93, icon: <FaServer /> },
-                { name: 'GraphQL', level: 80, icon: <FaServer /> },
-                { name: 'Microservices', level: 85, icon: <FaServer /> }
+                { name: 'GraphQL', level: 80, icon: <FaServer /> }
             ]
         },
         {
