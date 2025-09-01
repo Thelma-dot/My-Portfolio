@@ -1,6 +1,7 @@
 import React from 'react';
 import { motion } from 'framer-motion';
 import { FaArrowDown, FaGithub, FaLinkedin, FaEnvelope } from 'react-icons/fa';
+import Logo from './Logo';
 import './Hero.css';
 
 const Hero: React.FC = () => {
@@ -64,6 +65,16 @@ const Hero: React.FC = () => {
                         animate={{ opacity: 1, y: 0 }}
                         transition={{ duration: 0.8, delay: 0.2 }}
                     >
+                        {/* Hero Logo */}
+                        <motion.div
+                            className="hero-logo"
+                            initial={{ opacity: 0, scale: 0.5 }}
+                            animate={{ opacity: 1, scale: 1 }}
+                            transition={{ duration: 0.8, delay: 0.1 }}
+                        >
+                            <Logo size="large" />
+                        </motion.div>
+
                         <motion.p
                             className="hero-greeting"
                             initial={{ opacity: 0, x: -50 }}

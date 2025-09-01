@@ -2,6 +2,7 @@ import React, { useState, useEffect } from 'react';
 import { motion, AnimatePresence } from 'framer-motion';
 import { FaBars, FaTimes, FaGithub, FaLinkedin, FaTwitter } from 'react-icons/fa';
 import ThemeToggle from './ThemeToggle';
+import Logo from './Logo';
 import './Header.css';
 
 const Header: React.FC = () => {
@@ -48,13 +49,12 @@ const Header: React.FC = () => {
                 <div className="header-content">
                     {/* Logo */}
                     <motion.div
-                        className="logo"
+                        className="logo-container"
                         whileHover={{ scale: 1.05 }}
                         whileTap={{ scale: 0.95 }}
                     >
                         <a href="#hero" onClick={() => scrollToSection('hero')}>
-                            <span className="logo-text">TB</span>
-                            <span className="logo-full">Thelma Buabeng</span>
+                            <Logo size="medium" />
                         </a>
                     </motion.div>
 

@@ -1,6 +1,7 @@
 import React from 'react';
 import { motion } from 'framer-motion';
 import { FaGithub, FaLinkedin, FaTwitter, FaEnvelope, FaHeart } from 'react-icons/fa';
+import Logo from './Logo';
 import './Footer.css';
 
 const Footer: React.FC = () => {
@@ -116,8 +117,7 @@ const Footer: React.FC = () => {
             viewport={{ once: true }}
           >
             <div className="brand-logo">
-              <span className="logo-text">TB</span>
-              <span className="logo-full">Thelma Buabeng</span>
+              <Logo size="medium" />
             </div>
             <p className="brand-description">
               Passionate Full-Stack Engineer creating innovative digital solutions
