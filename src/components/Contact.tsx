@@ -1,7 +1,8 @@
-import React, { useState } from 'react';
+import React, { useState, useEffect } from 'react';
 import { motion } from 'framer-motion';
 import { useInView } from 'react-intersection-observer';
 import { FaEnvelope, FaPhone, FaMapMarkerAlt, FaGithub, FaLinkedin, FaTwitter } from 'react-icons/fa';
+import emailjs from '@emailjs/browser';
 import './Contact.css';
 
 const Contact: React.FC = () => {
@@ -20,6 +21,11 @@ const Contact: React.FC = () => {
     const [isSubmitting, setIsSubmitting] = useState(false);
     const [submitStatus, setSubmitStatus] = useState<'idle' | 'success' | 'error'>('idle');
 
+    // Initialize EmailJS
+    useEffect(() => {
+        emailjs.init('your_public_key'); // Replace with your actual public key
+    }, []);
+
     const handleInputChange = (e: React.ChangeEvent<HTMLInputElement | HTMLTextAreaElement>) => {
         const { name, value } = e.target;
         setFormData(prev => ({
@@ -32,15 +38,26 @@ const Contact: React.FC = () => {
         e.preventDefault();
         setIsSubmitting(true);
 
-        // Simulate form submission
         try {
-            await new Promise(resolve => setTimeout(resolve, 2000));
-            setSubmitStatus('success');
-            setFormData({ name: '', email: '', subject: '', message: '' });
+            // Send email using EmailJS
+            const result = await emailjs.sendForm(
+                'service_your_service_id', // Replace with your EmailJS service ID
+                'template_your_template_id', // Replace with your EmailJS template ID
+                e.currentTarget,
+                'your_public_key' // Replace with your EmailJS public key
+            );
 
-            // Reset status after 5 seconds
-            setTimeout(() => setSubmitStatus('idle'), 5000);
+            if (result.status === 200) {
+                setSubmitStatus('success');
+                setFormData({ name: '', email: '', subject: '', message: '' });
+
+                // Reset status after 5 seconds
+                setTimeout(() => setSubmitStatus('idle'), 5000);
+            } else {
+                throw new Error('Failed to send email');
+            }
         } catch (error) {
+            console.error('Email error:', error);
             setSubmitStatus('error');
             setTimeout(() => setSubmitStatus('idle'), 5000);
         } finally {
@@ -278,7 +295,7 @@ const Contact: React.FC = () => {
                     </p>
                     <div className="cta-buttons">
                         <motion.a
-                            href="mailto:thelma@example.com"
+                            href="mailto:thelmabuabeng4@gmail.com"
                             className="btn btn-primary"
                             whileHover={{ scale: 1.05, y: -2 }}
                             whileTap={{ scale: 0.95 }}

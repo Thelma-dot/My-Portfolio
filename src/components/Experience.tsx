@@ -15,13 +15,13 @@ const Experience: React.FC = () => {
             id: 1,
             type: 'work',
             title: 'Senior Full-Stack Engineer',
-            company: 'TechCorp Solutions',
+            company: 'Freelancer',
             period: '2022 - Present',
-            description: 'Leading development of enterprise-level web applications using React, Node.js, and cloud technologies. Mentoring junior developers and implementing best practices.',
+            description: 'Leading development of enterprise-level web applications using React, Node.js, and cloud technologies. Working remotely with clients worldwide to deliver scalable solutions.',
             achievements: [
+                'Delivered 5+ successful client projects on time and budget',
                 'Reduced application load time by 40% through optimization',
-                'Led a team of 5 developers on a major project',
-                'Implemented CI/CD pipeline reducing deployment time by 60%'
+                'Built responsive web applications with modern tech stack'
             ],
             technologies: ['React', 'Node.js', 'AWS', 'Docker', 'MongoDB']
         },
@@ -29,27 +29,27 @@ const Experience: React.FC = () => {
             id: 2,
             type: 'work',
             title: 'Full-Stack Developer',
-            company: 'Digital Innovations Inc.',
-            period: '2020 - 2022',
-            description: 'Developed and maintained multiple client projects, specializing in e-commerce solutions and custom web applications.',
+            company: 'Freelance Client',
+            period: '2023 - 2024',
+            description: 'Developed and maintained client projects, specializing in user dashboards and admin interfaces for inventory management systems.',
             achievements: [
-                'Delivered 15+ client projects on time and budget',
-                'Increased client satisfaction score to 95%',
-                'Developed reusable component library'
+                'Built custom inventory management dashboard',
+                'Improved data processing efficiency by 30%',
+                'Created responsive admin interface for client'
             ],
-            technologies: ['React', 'Express.js', 'PostgreSQL', 'Stripe', 'Redis']
+            technologies: ['React', 'Express.js', 'PostgreSQL']
         },
         {
             id: 3,
             type: 'work',
             title: 'Frontend Developer',
-            company: 'WebCraft Studios',
-            period: '2018 - 2020',
-            description: 'Focused on creating responsive and user-friendly interfaces for various web applications and mobile apps.',
+            company: 'Freelance Project',
+            period: '2022 - 2023',
+            description: 'Focused on creating responsive and user-friendly interfaces for various web applications as a freelance developer.',
             achievements: [
-                'Built 20+ responsive websites',
-                'Improved user engagement by 35%',
-                'Collaborated with design team on UX improvements'
+                'Built responsive websites for multiple clients',
+                'Improved user engagement by 35% through UX optimization',
+                'Collaborated with design teams on interface improvements'
             ],
             technologies: ['React', 'Vue.js', 'CSS3', 'JavaScript', 'Responsive Design']
         }
@@ -59,13 +59,11 @@ const Experience: React.FC = () => {
         {
             id: 1,
             type: 'education',
-            title: 'Bachelor of Computer Science',
-            company: 'University of Technology',
-            period: '2014 - 2018',
-            description: 'Graduated with honors, specialized in software engineering and web development.',
+            title: 'Bachelor Science in Information Technology Management',
+            company: 'University of Professional Studies Accra',
+            period: '2019 - 2023',
+            description: 'Specialized in software engineering and web development.',
             achievements: [
-                'First Class Honours',
-                'Dean\'s List for 3 consecutive years',
                 'Final year project: E-commerce platform'
             ],
             technologies: ['Java', 'Python', 'Web Development', 'Database Systems']
@@ -78,7 +76,7 @@ const Experience: React.FC = () => {
             type: 'certification',
             title: 'AWS Certified Developer',
             company: 'Amazon Web Services',
-            period: '2023',
+            period: '2025',
             description: 'Certified in developing and maintaining applications on the AWS platform.',
             achievements: ['Cloud architecture design', 'Serverless development', 'Security best practices'],
             technologies: ['AWS', 'Lambda', 'DynamoDB', 'API Gateway']
@@ -86,9 +84,9 @@ const Experience: React.FC = () => {
         {
             id: 2,
             type: 'certification',
-            title: 'React Developer Certification',
-            company: 'Meta',
-            period: '2022',
+            title: 'FrontendDeveloper Certification',
+            company: 'ALX',
+            period: '2024',
             description: 'Advanced React development certification covering hooks, context, and performance optimization.',
             achievements: ['Advanced React patterns', 'Performance optimization', 'State management'],
             technologies: ['React', 'Hooks', 'Context API', 'Performance']
@@ -132,7 +130,7 @@ const Experience: React.FC = () => {
                         Professional <span className="gradient-text">Experience</span>
                     </h2>
                     <p className="section-subtitle">
-                        My journey in technology and the milestones that shaped my career
+                        My journey as a freelance developer and the milestones that shaped my remote work career
                     </p>
                 </motion.div>
 
@@ -203,22 +201,22 @@ const Experience: React.FC = () => {
                                 <div className="summary-icon">
                                     <FaBriefcase />
                                 </div>
-                                <h4>5+ Years Experience</h4>
-                                <p>Proven track record in delivering successful projects across various industries</p>
+                                <h4>2+ Years Experience</h4>
+                                <p>Proven track record in delivering successful freelance projects across various industries</p>
                             </div>
                             <div className="summary-item">
                                 <div className="summary-icon">
                                     <FaTrophy />
                                 </div>
-                                <h4>50+ Projects Completed</h4>
+                                <h4>5+ Projects Completed</h4>
                                 <p>Diverse portfolio showcasing expertise in different technologies and domains</p>
                             </div>
                             <div className="summary-item">
                                 <div className="summary-icon">
                                     <FaCertificate />
                                 </div>
-                                <h4>Continuous Learning</h4>
-                                <p>Always staying updated with latest technologies and industry best practices</p>
+                                <h4>6+ Happy Clients</h4>
+                                <p>Building long-term relationships through quality work and excellent communication</p>
                             </div>
                         </div>
                     </div>
