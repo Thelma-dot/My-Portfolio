@@ -1,7 +1,7 @@
 import React, { useState } from 'react';
 import { motion, AnimatePresence } from 'framer-motion';
 import { useInView } from 'react-intersection-observer';
-import { FaGithub, FaExternalLinkAlt, FaCode, FaMobile, FaGlobe } from 'react-icons/fa';
+import { FaGithub, FaExternalLinkAlt, FaCode, FaMobile, FaGlobe, FaRocket } from 'react-icons/fa';
 import './Projects.css';
 
 const Projects: React.FC = () => {
