@@ -52,14 +52,14 @@ const Contact: React.FC = () => {
         {
             icon: <FaEnvelope />,
             title: 'Email',
-            value: 'thelma@example.com',
-            link: 'mailto:thelma@example.com'
+            value: 'thelmabuabeng4@gmail.com',
+            link: 'mailto:thelmabuabeng4@gmail.com'
         },
         {
             icon: <FaPhone />,
             title: 'Phone',
-            value: '+1 (555) 123-4567',
-            link: 'tel:+15551234567'
+            value: '+233 0595634868',
+            link: 'tel:+2330595634868'
         },
         {
             icon: <FaMapMarkerAlt />,
@@ -73,19 +73,19 @@ const Contact: React.FC = () => {
         {
             icon: <FaGithub />,
             name: 'GitHub',
-            url: 'https://github.com/thelmabuabeng',
+            url: 'https://github.com/Thelma-dot',
             color: '#333'
         },
         {
             icon: <FaLinkedin />,
             name: 'LinkedIn',
-            url: 'https://linkedin.com/in/thelmabuabeng',
+            url: 'https://www.linkedin.com/in/thelma-buabeng-2144aa251',
             color: '#0077b5'
         },
         {
             icon: <FaTwitter />,
             name: 'Twitter',
-            url: 'https://twitter.com/thelmabuabeng',
+            url: 'https://x.com/BuabengThelma',
             color: '#1da1f2'
         }
     ];

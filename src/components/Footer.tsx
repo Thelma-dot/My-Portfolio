@@ -31,8 +31,8 @@ const Footer: React.FC = () => {
     {
       title: 'Resources',
       links: [
-        { name: 'GitHub', href: 'https://github.com/thelmabuabeng', external: true },
-        { name: 'LinkedIn', href: 'https://linkedin.com/in/thelmabuabeng', external: true },
+        { name: 'GitHub', href: 'https://github.com/Thelma-dot', external: true },
+        { name: 'LinkedIn', href: 'https://www.linkedin.com/in/thelma-buabeng-2144aa251', external: true },
         { name: 'Blog', href: '#', external: false },
         { name: 'Resume', href: '#', external: false }
       ]
@@ -43,25 +43,25 @@ const Footer: React.FC = () => {
     {
       icon: <FaGithub />,
       name: 'GitHub',
-      url: 'https://github.com/thelmabuabeng',
+      url: 'https://github.com/Thelma-dot',
       color: '#333'
     },
     {
       icon: <FaLinkedin />,
       name: 'LinkedIn',
-      url: 'https://linkedin.com/in/thelmabuabeng',
+      url: 'https://www.linkedin.com/in/thelma-buabeng-2144aa251',
       color: '#0077b5'
     },
     {
       icon: <FaTwitter />,
       name: 'Twitter',
-      url: 'https://twitter.com/thelmabuabeng',
+      url: 'https://x.com/BuabengThelma',
       color: '#1da1f2'
     },
     {
       icon: <FaEnvelope />,
       name: 'Email',
-      url: 'mailto:thelma@example.com',
+      url: 'mailto:thelmabuabeng4@gmail.com',
       color: '#ea4335'
     }
   ];

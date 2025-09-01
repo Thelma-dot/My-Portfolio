@@ -78,7 +78,7 @@ const Header: React.FC = () => {
                     {/* Social Links */}
                     <div className="social-links">
                         <motion.a
-                            href="https://github.com/thelmabuabeng"
+                            href="https://github.com/Thelma-dot"
                             target="_blank"
                             rel="noopener noreferrer"
                             whileHover={{ y: -2, scale: 1.1 }}
@@ -87,7 +87,7 @@ const Header: React.FC = () => {
                             <FaGithub />
                         </motion.a>
                         <motion.a
-                            href="https://linkedin.com/in/thelmabuabeng"
+                            href="https://www.linkedin.com/in/thelma-buabeng-2144aa251"
                             target="_blank"
                             rel="noopener noreferrer"
                             whileHover={{ y: -2, scale: 1.1 }}
@@ -96,7 +96,7 @@ const Header: React.FC = () => {
                             <FaLinkedin />
                         </motion.a>
                         <motion.a
-                            href="https://twitter.com/thelmabuabeng"
+                            href="https://x.com/BuabengThelma"
                             target="_blank"
                             rel="noopener noreferrer"
                             whileHover={{ y: -2, scale: 1.1 }}
@@ -139,13 +139,13 @@ const Header: React.FC = () => {
                                 ))}
                             </ul>
                             <div className="mobile-social-links">
-                                <a href="https://github.com/thelmabuabeng" target="_blank" rel="noopener noreferrer">
+                                <a href="https://github.com/Thelma-dot" target="_blank" rel="noopener noreferrer">
                                     <FaGithub />
                                 </a>
-                                <a href="https://linkedin.com/in/thelmabuabeng" target="_blank" rel="noopener noreferrer">
+                                <a href="https://www.linkedin.com/in/thelma-buabeng-2144aa251" target="_blank" rel="noopener noreferrer">
                                     <FaLinkedin />
                                 </a>
-                                <a href="https://twitter.com/thelmabuabeng" target="_blank" rel="noopener noreferrer">
+                                <a href="https://x.com/BuabengThelma" target="_blank" rel="noopener noreferrer">
                                     <FaTwitter />
                                 </a>
                             </div>

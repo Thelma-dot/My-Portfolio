@@ -166,7 +166,7 @@ const Hero: React.FC = () => {
                     transition={{ duration: 0.8, delay: 1.6 }}
                 >
                     <motion.a
-                        href="https://github.com/thelmabuabeng"
+                        href="https://github.com/Thelma-dot"
                         target="_blank"
                         rel="noopener noreferrer"
                         className="social-link"
@@ -178,7 +178,7 @@ const Hero: React.FC = () => {
                     </motion.a>
 
                     <motion.a
-                        href="https://linkedin.com/in/thelmabuabeng"
+                        href="https://www.linkedin.com/in/thelma-buabeng-2144aa251"
                         target="_blank"
                         rel="noopener noreferrer"
                         className="social-link"
@@ -190,7 +190,7 @@ const Hero: React.FC = () => {
                     </motion.a>
 
                     <motion.a
-                        href="mailto:thelma@example.com"
+                        href="mailto:thelmabuabeng4@gmail.com"
                         className="social-link"
                         whileHover={{ y: -5, scale: 1.1 }}
                         whileTap={{ scale: 0.95 }}
