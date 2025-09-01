@@ -15,78 +15,42 @@ const Projects: React.FC = () => {
     const projects = [
         {
             id: 1,
-            title: 'E-Commerce Platform',
-            description: 'A full-stack e-commerce solution with React frontend, Node.js backend, and MongoDB database. Features include user authentication, payment processing, and admin dashboard.',
+            title: 'Coming Soon',
+            description: 'Exciting projects are in development. Stay tuned for amazing full-stack applications, innovative web solutions, and cutting-edge mobile apps.',
             image: '/api/placeholder/400/300',
-            category: 'fullstack',
-            technologies: ['React', 'Node.js', 'MongoDB', 'Stripe', 'Redux'],
-            liveUrl: 'https://ecommerce-demo.com',
-            githubUrl: 'https://github.com/thelmabuabeng/ecommerce',
+            category: 'coming-soon',
+            technologies: ['React', 'Node.js', 'TypeScript', 'Modern Tech Stack'],
+            liveUrl: '#',
+            githubUrl: '#',
             featured: true
         },
         {
             id: 2,
-            title: 'Task Management App',
-            description: 'A collaborative task management application built with React and Firebase. Real-time updates, drag-and-drop functionality, and team collaboration features.',
+            title: 'Coming Soon',
+            description: 'More innovative projects are on the horizon. I\'m working on creating exceptional digital experiences that solve real-world problems.',
             image: '/api/placeholder/400/300',
-            category: 'frontend',
-            technologies: ['React', 'Firebase', 'TypeScript', 'Tailwind CSS'],
-            liveUrl: 'https://taskmanager-demo.com',
-            githubUrl: 'https://github.com/thelmabuabeng/taskmanager',
+            category: 'coming-soon',
+            technologies: ['Full-Stack', 'Mobile', 'Cloud', 'AI/ML'],
+            liveUrl: '#',
+            githubUrl: '#',
             featured: true
         },
         {
             id: 3,
-            title: 'REST API Service',
-            description: 'A scalable REST API service built with Node.js, Express, and PostgreSQL. Includes authentication, rate limiting, and comprehensive documentation.',
+            title: 'Coming Soon',
+            description: 'Building the future, one project at a time. These applications will showcase the latest technologies and best practices in software development.',
             image: '/api/placeholder/400/300',
-            category: 'backend',
-            technologies: ['Node.js', 'Express', 'PostgreSQL', 'JWT', 'Swagger'],
-            liveUrl: 'https://api-demo.com',
-            githubUrl: 'https://github.com/thelmabuabeng/rest-api',
-            featured: false
-        },
-        {
-            id: 4,
-            title: 'Portfolio Website',
-            description: 'A modern, responsive portfolio website built with React and Framer Motion. Features smooth animations, dark mode, and optimized performance.',
-            image: '/api/placeholder/400/300',
-            category: 'frontend',
-            technologies: ['React', 'TypeScript', 'Framer Motion', 'CSS3'],
-            liveUrl: 'https://portfolio-demo.com',
-            githubUrl: 'https://github.com/thelmabuabeng/portfolio',
-            featured: false
-        },
-        {
-            id: 5,
-            title: 'Mobile Banking App',
-            description: 'A cross-platform mobile banking application built with React Native. Secure authentication, transaction history, and real-time notifications.',
-            image: '/api/placeholder/400/300',
-            category: 'mobile',
-            technologies: ['React Native', 'Redux', 'Firebase', 'Biometrics'],
-            liveUrl: 'https://mobilebanking-demo.com',
-            githubUrl: 'https://github.com/thelmabuabeng/mobilebanking',
+            category: 'coming-soon',
+            technologies: ['Next.js', 'Python', 'AWS', 'Docker'],
+            liveUrl: '#',
+            githubUrl: '#',
             featured: true
-        },
-        {
-            id: 6,
-            title: 'Data Analytics Dashboard',
-            description: 'An interactive data visualization dashboard built with React and D3.js. Real-time data updates, customizable charts, and export functionality.',
-            image: '/api/placeholder/400/300',
-            category: 'fullstack',
-            technologies: ['React', 'D3.js', 'Node.js', 'Chart.js', 'Socket.io'],
-            liveUrl: 'https://dashboard-demo.com',
-            githubUrl: 'https://github.com/thelmabuabeng/dashboard',
-            featured: false
         }
     ];
 
     const filters = [
         { id: 'all', label: 'All Projects' },
-        { id: 'fullstack', label: 'Full-Stack' },
-        { id: 'frontend', label: 'Frontend' },
-        { id: 'backend', label: 'Backend' },
-        { id: 'mobile', label: 'Mobile' }
+        { id: 'coming-soon', label: 'Coming Soon' }
     ];
 
     const filteredProjects = activeFilter === 'all'
@@ -95,10 +59,7 @@ const Projects: React.FC = () => {
 
     const getCategoryIcon = (category: string) => {
         switch (category) {
-            case 'fullstack': return <FaCode />;
-            case 'frontend': return <FaGlobe />;
-            case 'backend': return <FaCode />;
-            case 'mobile': return <FaMobile />;
+            case 'coming-soon': return <FaRocket />;
             default: return <FaCode />;
         }
     };
@@ -117,7 +78,7 @@ const Projects: React.FC = () => {
                         Featured <span className="gradient-text">Projects</span>
                     </h2>
                     <p className="section-subtitle">
-                        A showcase of my recent work and technical expertise across different domains
+                        Exciting projects are in development - stay tuned for amazing digital solutions
                     </p>
                 </motion.div>
 
@@ -153,6 +114,7 @@ const Projects: React.FC = () => {
                             <motion.div
                                 key={project.id}
                                 className={`project-card ${project.featured ? 'featured' : ''}`}
+                                data-category={project.category}
                                 initial={{ opacity: 0, y: 30 }}
                                 animate={{ opacity: 1, y: 0 }}
                                 exit={{ opacity: 0, y: -30 }}
@@ -173,28 +135,13 @@ const Projects: React.FC = () => {
                                     )}
                                     <div className="project-overlay">
                                         <div className="project-links">
-                                            <motion.a
-                                                href={project.liveUrl}
-                                                target="_blank"
-                                                rel="noopener noreferrer"
-                                                className="project-link"
+                                            <motion.div
+                                                className="project-link coming-soon"
                                                 whileHover={{ scale: 1.1 }}
-                                                whileTap={{ scale: 0.95 }}
                                             >
-                                                <FaExternalLinkAlt />
-                                                <span>Live Demo</span>
-                                            </motion.a>
-                                            <motion.a
-                                                href={project.githubUrl}
-                                                target="_blank"
-                                                rel="noopener noreferrer"
-                                                className="project-link"
-                                                whileHover={{ scale: 1.1 }}
-                                                whileTap={{ scale: 0.95 }}
-                                            >
-                                                <FaGithub />
-                                                <span>Source Code</span>
-                                            </motion.a>
+                                                <FaRocket />
+                                                <span>Coming Soon</span>
+                                            </motion.div>
                                         </div>
                                     </div>
                                 </div>

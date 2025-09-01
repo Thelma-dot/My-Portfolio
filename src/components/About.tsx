@@ -62,7 +62,7 @@ const About: React.FC = () => {
                             <h3>Hello! I'm Thelma Buabeng</h3>
                             <p>
                                 I'm a passionate Full-Stack Engineer with a deep love for creating innovative digital solutions.
-                                With years of experience in web development, I specialize in building scalable, user-friendly
+                                With over 2 years of experience in web development, I specialize in building scalable, user-friendly
                                 applications that drive business growth and enhance user experiences.
                             </p>
                             <p>
@@ -75,15 +75,15 @@ const About: React.FC = () => {
 
                         <div className="about-stats">
                             <div className="stat-item">
-                                <div className="stat-number">5+</div>
+                                <div className="stat-number">2+</div>
                                 <div className="stat-label">Years Experience</div>
                             </div>
                             <div className="stat-item">
-                                <div className="stat-number">50+</div>
+                                <div className="stat-number">5+</div>
                                 <div className="stat-label">Projects Completed</div>
                             </div>
                             <div className="stat-item">
-                                <div className="stat-number">30+</div>
+                                <div className="stat-number">6+</div>
                                 <div className="stat-label">Happy Clients</div>
                             </div>
                         </div>
