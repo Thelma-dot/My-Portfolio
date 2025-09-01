@@ -1,6 +1,7 @@
 import React, { useState, useEffect } from 'react';
 import { motion, AnimatePresence } from 'framer-motion';
 import { FaBars, FaTimes, FaGithub, FaLinkedin, FaTwitter } from 'react-icons/fa';
+import ThemeToggle from './ThemeToggle';
 import './Header.css';
 
 const Header: React.FC = () => {
@@ -104,6 +105,7 @@ const Header: React.FC = () => {
                         >
                             <FaTwitter />
                         </motion.a>
+                        <ThemeToggle />
                     </div>
 
                     {/* Mobile Menu Button */}

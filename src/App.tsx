@@ -1,5 +1,6 @@
 import React, { useState, useEffect } from 'react';
 import { motion } from 'framer-motion';
+import { ThemeProvider } from './contexts/ThemeContext';
 import Header from './components/Header';
 import Hero from './components/Hero';
 import About from './components/About';
@@ -8,6 +9,7 @@ import Projects from './components/Projects';
 import Experience from './components/Experience';
 import Contact from './components/Contact';
 import Footer from './components/Footer';
+import ThemeToggle from './components/ThemeToggle';
 import './App.css';
 
 const App: React.FC = () => {
@@ -44,18 +46,20 @@ const App: React.FC = () => {
     }
 
     return (
-        <div className="App">
-            <Header />
-            <main>
-                <Hero />
-                <About />
-                <Skills />
-                <Projects />
-                <Experience />
-                <Contact />
-            </main>
-            <Footer />
-        </div>
+        <ThemeProvider>
+                  <div className="App">
+        <Header />
+        <main>
+                    <Hero />
+                    <About />
+                    <Skills />
+                    <Projects />
+                    <Experience />
+                    <Contact />
+                </main>
+                <Footer />
+            </div>
+        </ThemeProvider>
     );
 };
 
