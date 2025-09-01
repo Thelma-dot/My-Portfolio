@@ -5,7 +5,7 @@ import {
     FaReact, FaNodeJs, FaDatabase, FaCloud,
     FaMobile, FaCode, FaTools, FaServer
 } from 'react-icons/fa';
-import { SiTypescript, SiJavascript, SiPython, SiMongodb, SiPostgresql, SiDocker, SiKubernetes } from 'react-icons/si';
+import { SiTypescript, SiJavascript, SiPython, SiMongodb, SiPostgresql, SiDocker } from 'react-icons/si';
 import './Skills.css';
 
 const Skills: React.FC = () => {
