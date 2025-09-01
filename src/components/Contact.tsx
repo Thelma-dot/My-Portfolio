@@ -34,7 +34,7 @@ const Contact: React.FC = () => {
         }));
     };
 
-    const handleSubmit = async (e: React.FormEvent) => {
+    const handleSubmit = async (e: React.FormEvent<HTMLFormElement>) => {
         e.preventDefault();
         setIsSubmitting(true);
 
@@ -43,7 +43,7 @@ const Contact: React.FC = () => {
             const result = await emailjs.sendForm(
                 'service_your_service_id', // Replace with your EmailJS service ID
                 'template_your_template_id', // Replace with your EmailJS template ID
-                e.currentTarget,
+                e.currentTarget as HTMLFormElement,
                 'your_public_key' // Replace with your EmailJS public key
             );
 
