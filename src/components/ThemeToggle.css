@@ -44,11 +44,47 @@
     border-color: #e5e7eb;
 }
 
+/* Enhanced mobile dark mode styles */
+@media (max-width: 768px) {
+    [data-theme="dark"] .theme-toggle {
+        background: rgba(20, 20, 40, 0.95);
+        border-color: var(--border-color);
+        box-shadow: 0 4px 12px rgba(0, 0, 0, 0.4);
+    }
+    
+    [data-theme="dark"] .theme-toggle:hover {
+        background: rgba(30, 30, 50, 0.95);
+        border-color: var(--primary-color);
+        box-shadow: 0 6px 16px rgba(0, 0, 0, 0.5);
+    }
+    
+    [data-theme="dark"] .theme-toggle:active {
+        background: var(--primary-color);
+        color: white;
+        transform: scale(0.95);
+    }
+}
+
+@media (max-width: 480px) {
+    [data-theme="dark"] .theme-toggle {
+        background: rgba(16, 16, 32, 0.98);
+        border-color: var(--border-light);
+        box-shadow: 0 3px 8px rgba(0, 0, 0, 0.5);
+    }
+    
+    [data-theme="dark"] .theme-toggle:hover {
+        background: rgba(24, 24, 40, 0.98);
+        border-color: var(--primary-color);
+    }
+}
+
 /* Responsive adjustments */
 @media (max-width: 768px) {
   .theme-toggle {
     width: 35px;
     height: 35px;
+    min-width: 44px;
+    min-height: 44px;
   }
   
   .toggle-icon {
@@ -60,6 +96,8 @@
   .theme-toggle {
     width: 32px;
     height: 32px;
+    min-width: 44px;
+    min-height: 44px;
   }
   
   .toggle-icon {
